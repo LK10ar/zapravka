@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.premier-titre {font-size: 30px;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #111;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+h2, a, button {
+    font-family: "Tulpen One", serif;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 71, 87, 0.6);
+}
+
+
+.w45 {
+    width: 45%;
+}
+
+.w30 {
+    width: 30%;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w10 {
+    width: 10%;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+header {
+    height: 100vh;
+    background: url(img\Zapravka-840-490-min.jpg) bottom/cover no-repeat;
+}
+
+nav {
+    background: #111;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+nav:hover {
+    background: #111;
+}
+
+nav ul {
+    gap: 30px; /* Ajoute un espacement horizontal */
+}
+
+nav ul li {
+    margin: 15px 0; /* Ajoute un espace vertical entre les liens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff4757;
+    text-shadow: 0 0 10px #ff4757;
+}
+
+
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#buy {
+    text-align: center;
+    color: lightskyblue;
+}
+
+button {
+    background: #ff4757;
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff4757;
+}
+
+button:hover {
+    background: #e84118;
+    box-shadow: 0 0 15px #e84118;
+}
+
+
+footer {
+    background: #111;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+.logo-footer {
+    width: 500px; 
+    display: block;
+    margin: 0 auto; 
+}
+
+header {
+    height: 100vh;
+    background: url(../img/Zapravka-840-490-min.jpg) center center/cover no-repeat;
+}
+    
+
+img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.burger {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex; 
+        width: 40px;
+        height: 40px;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        z-index: 1100;
+    }
+
+    .burger span {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    
+    nav ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #111;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-active {
+        transform: translateY(0);
+    }
+
+    
+    .burger.toggle span:nth-child(1) {
+        transform: rotate(39deg) translate(8px, 3px);
+    }
+
+    .burger.toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.toggle span:nth-child(3) {
+        transform: rotate(319deg) translate(15.5px, -12.3px);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 20px auto;
+    }
+.menu-logo {order: -1;}
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+
+    .w45, .w30, .w20, .w10 {
+        width: 47%;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .logo-footer {
+        width: 100%; 
+    }
+
+    .container {
+        width: 100%;
+        margin: 20px auto;
+    }
+    header {
+        background: url(../img/Zapravka-840-490-min.jpg) center center/contain no-repeat;
+    }
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .flex {
+        gap: 15px;
+    }
+
+    .w45, .w30, .w20, .w10 {
+        width: 47%;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    img {
+        width: 47%; 
+        height: auto;
+    }
+
+    .logo-footer {
+        width: 100%; 
+    }
+}
