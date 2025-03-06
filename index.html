@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muse - Rock Vibes</title>
+    <title>ZAPRAVKA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -50,7 +50,7 @@
         }
 
         nav ul li img {
-          width: 80px;
+            width: 80px;
         }
 
         .container {
@@ -67,13 +67,17 @@
             flex-wrap: wrap;
         }
 
-        .w30 img, .w45 img, .w20 img {
+        .w30 img,
+        .w45 img,
+        .w20 img {
             width: 100%;
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .w30 img:hover, .w45 img:hover, .w20 img:hover {
+        .w30 img:hover,
+        .w45 img:hover,
+        .w20 img:hover {
             transform: scale(1.1);
             box-shadow: 0 0 15px rgba(255, 71, 87, 0.6);
         }
@@ -110,6 +114,7 @@
         .facebook {
             background: #1877f2;
         }
+
         .news-header {
             background: #111;
             padding: 15px;
@@ -145,22 +150,23 @@
 <body>
     <header>
         <nav>
-           
+
             <div class="burger" id="burger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
 
-            
+
             <ul id="nav-links">
-                
+
                 <li><a href="#">Home</a></li>
                 <li><a href="#ZAPRAVKA">ZAPRAVKA</a></li>
-                <li class="menu-logo"><a href="#"><img src="img/image-removebg-preview (4).png" alt="Zapravka Logo"></a></li>
+                <li class="menu-logo"><a href="#"><img src="img/image-removebg-preview (4).png" alt="Zapravka Logo"></a>
+                </li>
                 <li><a href="#disco">Discography</a></li>
                 <li><a href="#news-item">News</a></li>
-               
+
                 <div class="close-btn" id="close-btn"></div>
             </ul>
         </nav>
@@ -170,21 +176,21 @@
         const burger = document.getElementById('burger');
         const navLinks = document.getElementById('nav-links');
         const closeBtn = document.getElementById('close-btn');
-        const links = document.querySelectorAll('#nav-links li a'); 
-    
-        
+        const links = document.querySelectorAll('#nav-links li a');
+
+
         burger.addEventListener('click', () => {
             navLinks.classList.toggle('nav-active');
             burger.classList.toggle('toggle');
         });
-    
-        
+
+
         closeBtn.addEventListener('click', () => {
             navLinks.classList.remove('nav-active');
             burger.classList.remove('toggle');
         });
-    
-        
+
+
         links.forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('nav-active');
@@ -192,29 +198,32 @@
             });
         });
     </script>
-    
 
- 
+
+
 
     <main>
 
         <section class="container" id="ZAPRAVKA">
             <h2>ZAPRAVKA</h2>
-            <article class="flex">
+            <article class="flex" style="flex-direction: column;">
                 <div class="w45">
                     <img src="img\65cce045d8e1f297035714.jpg" alt="Image du groupe">
                 </div>
-               <div class="w45">
-                <h2 class="premier-titre">Zapravka – Une Expérience Musicale Unique</h2><p class="">
-                    
-                Zapravka est un groupe musical dynamique qui mêle des sonorités innovantes et des rythmes entraînants, captivant un public toujours plus large. Avec une identité sonore singulière et une approche créative, le groupe s'impose sur la scène musicale contemporaine en explorant divers styles et influences.
+                <div class="w45">
+                    <h2 class="premier-titre">Zapravka – Une Expérience Musicale Unique</h2>
                 
-                Disponible sur des plateformes comme Last.fm et SoundCloud, Zapravka continue d’évoluer en proposant des morceaux vibrants et immersifs. Leur musique, caractérisée par une production soignée et une énergie communicative, séduit un large éventail d’auditeurs.
-                
-                Pour toute collaboration ou réservation, vous pouvez les contacter à l’adresse zapravka@rhein-audio.de.
-                
-                Retrouvez leur univers et plongez dans une expérience musicale unique !</p></div> 
-                    
+                        <div class="texte-deroulant">
+                            <p>
+                                Zapravka est un groupe musical dynamique qui mêle des sonorités innovantes et des rythmes entraînants, captivant un public toujours plus large. Avec une identité sonore singulière et une approche créative, le groupe s'impose sur la scène musicale contemporaine en explorant divers styles et influences. Disponible sur des plateformes comme Last.fm et SoundCloud, Zapravka continue d’évoluer en proposant des morceaux vibrants et immersifs. Leur musique, caractérisée par une production soignée et une énergie communicative, séduit un large éventail d’auditeurs. Pour toute collaboration ou réservation, vous pouvez les contacter à l’adresse zapravka@rhein-audio.de. Retrouvez leur univers et plongez dans une expérience musicale unique !
+                            </p>
+                            
+                        </div>
+                        <div class="fleche">▼</div>
+                        
+                        
+                        
+
             </article>
             <figure class="flex">
                 <img src="img\f6245a6a0b085ab402b74dbf3b5a4a67.jpg" class="w20" alt="image du groupe">
@@ -238,39 +247,55 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="container" id="disco">
             <h2>Discography</h2>
             <figure class="flex">
-                <img src="img\51Qc8ox-EWL._SX354_SY354_BL0_QL100__UXNaN_FMjpg_QL85_.jpg" class="w30" alt="Album de zapravka">
-                <img src="img\ab67616d00001e029993188a68bb1579d968bb01.jpeg" class="w30" alt="Album de zapravka">
-                <img src="img\41stgvlT8QL._SX354_SY354_BL0_QL100__UXNaN_FMjpg_QL85_.jpg" class="w30" alt="Album de zapravka">
-                <img src="img\0x1900-000000-80-0-0.jpg" class="w30" alt="Album de zapravka">
-                <img src="img\0x1900-000000-80-0-0 (1).jpg" class="w30" alt="Album de zapravka">
-                <img src="img\0x1900-000000-80-0-0 (2).jpg" class="w30" alt="Album de zapravka">
+                <a href="https://www.youtube.com/watch?v=rtCNEuCWp-k&ab_channel=ZAPRAVKA-Topic" class="w30">
+                    <img src="img\51Qc8ox-EWL._SX354_SY354_BL0_QL100__UXNaN_FMjpg_QL85_.jpg"   alt="Album de zapravka">
+                </a>
+                <a href="https://www.youtube.com/watch?v=3yXYj3zTSPU&ab_channel=GAZLIVE" class="w30">
+                    <img src="img\ab67616d00001e029993188a68bb1579d968bb01.jpeg" alt="Album de zapravka">
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=Z4Oujizv7ig&ab_channel=GAZLIVE" class="w30">
+                    <img src="img\41stgvlT8QL._SX354_SY354_BL0_QL100__UXNaN_FMjpg_QL85_.jpg"   alt="Album de zapravka">
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=BmWY2lBFrN8&list=PL3Bu84bj9ZCguFlacwRxFMqzzdyfsGZTA&ab_channel=ZAPRAVKA-Topic" class="w30">
+                    <img src="img\0x1900-000000-80-0-0.jpg"  alt="Album de zapravka">
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=Sz2ckO9AlY8&ab_channel=ZAPRAVKA" class="w30">
+                    <img src="img\0x1900-000000-80-0-0 (1).jpg"  alt="Album de zapravka">
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=FYMQIW3mcfA&ab_channel=ZAPRAVKA-Topic" class="w30">
+                    <img src="img\0x1900-000000-80-0-0 (2).jpg"  alt="Album de zapravka">
+                </a>
             </figure>
         </section>
-   
-      
-        
+
+
+
         <h2>News</h2>
-        <div class="news-container"id="news-item">
-            
+        <div class="news-container" id="news-item">
+
             <div class="news-item">
-        <img src="img\imagsfdsfe.png">
-        <p>VEN 07.03.2025 INSANE TOUR BORDEAUX</p>
-    </div>
-    <div class="news-item">
-        <img src="img\Affiche-du-concert-de-Zapravka-a-Tours.jpg" alt="News 2">
-        <p>Zapravka : le nouveau duo de DJ russes déjantés qui mixent et chantent en même temps</p>
-    </div>
-    <div class="news-item">
-        <img src="img\maxresdefault.jpg" alt="News 3">
-        <p>PANDEMIC SESSIONS #020: ZAPRAVKA</p>
-    </div>
-    </figure>
-   </section> 
-</main>
+                <img src="img\imagsfdsfe.png">
+                <p>VEN 07.03.2025 INSANE TOUR BORDEAUX</p>
+            </div>
+            <div class="news-item">
+                <img src="img\Affiche-du-concert-de-Zapravka-a-Tours.jpg" alt="News 2">
+                <p>Zapravka : le nouveau duo de DJ russes déjantés qui mixent et chantent en même temps</p>
+            </div>
+            <div class="news-item">
+                <img src="img\maxresdefault.jpg" alt="News 3">
+                <p>PANDEMIC SESSIONS #020: ZAPRAVKA</p>
+            </div>
+            </figure>
+            </section>
+    </main>
 
     <footer>
         <div class="container">
@@ -278,8 +303,10 @@
 
             <p>&copy; 2025 ZAPRAVKA.</p>
             <div class="social-buttons">
-                <a href="https://share.boom.ru/track/2880b279fe2140688b1cb5689f89d12d?share_auth=0234bd590c092f70bc831a61562550001a01089f8d" class="VK-MUSIC" target="_blank">VK-MUSIC</a>
-                <a href="https://open.spotify.com/intl-fr/artist/4oCaLmRVMM4Ck4VGrmh4VC" class="SPOTIFY" target="_blank">SPOTIFY</a>
+                <a href="https://share.boom.ru/track/2880b279fe2140688b1cb5689f89d12d?share_auth=0234bd590c092f70bc831a61562550001a01089f8d"
+                    class="VK-MUSIC" target="_blank">VK-MUSIC</a>
+                <a href="https://open.spotify.com/intl-fr/artist/4oCaLmRVMM4Ck4VGrmh4VC" class="SPOTIFY"
+                    target="_blank">SPOTIFY</a>
             </div>
         </div>
     </footer>
@@ -287,7 +314,7 @@
     <a href="#" class="back-to-top" id="backToTop">↑ TOP</a>
 
     <script>
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             var backToTop = document.getElementById('backToTop');
             if (window.scrollY > 300) {
                 backToTop.style.display = 'block';
@@ -296,6 +323,19 @@
             }
         });
     </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const fleche = document.querySelector(".fleche");
+        const texte = document.querySelector(".texte-deroulant");
+    
+        fleche.addEventListener("click", function() {
+            texte.classList.toggle("ouvert");
+        });
+    });
+    </script>
+    
 </body>
+
 
 </html>
